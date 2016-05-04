@@ -8,7 +8,7 @@ The features are unlabeled and can be found in the x_test.txt. The activity labe
 
 This is true for the training set as well.
 
-I created a script called R Script.R which combines the test and training sets. 
+I created a script called run_analysis.R which combines the test and training sets. 
 
 Prerequisites for this script
 the UCI HAR Dataset must be extracted and be availble in a directory called "UCI HAR Dataset"
