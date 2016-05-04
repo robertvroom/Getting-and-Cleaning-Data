@@ -46,8 +46,8 @@ for (i in 1:30) {
   
 }
 
-# 6. Rename columns and create Samsung_Data.txt file
+# 6. Rename columns and create txt file
 colnames(tidyframe)<-colnames(newDataFrame2)
 levels(tidyframe[,2])<-c('walk','upstairswalk','downstairswalk', 'sit','stand', 'lay')
-write.table(tidyframe, "Samsung_Data.txt", sep = "")
+write.table(tidyframe, "tidy.txt", sep = "")
 
