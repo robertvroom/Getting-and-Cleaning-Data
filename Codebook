@@ -1,0 +1,39 @@
+Getting and Cleaning Data Project
+Robert Vroom
+
+Description
+
+This codebook describes variables, data, and transformations performed to clean up data.
+
+Source Data
+
+A full description of the data used in this project can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The source data for this project can be found here.
+
+1. Merges the training and the test sets to create one data set
+
+The following files are read into seperate tables from the training and test files
+
+activity_labels.txt
+features.txt
+subject_train.txt
+x_train.txt
+y_train.txt
+subject_test.txt
+x_test.txt
+y_test.txt
+
+All test and train datasets are merged into a single table using the rbind function in R.
+Unneeded variables are removed using the rm function in R to free up memory and streamline the script.
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+I use grep to extract these data for the dataset.
+
+3. Use descriptive activity names to name the activities in the data set
+I merge data subset with the activityType table to inlude the descriptive activity names.
+
+4. Appropriately labels the data set with descriptive variable names
+Used the feature names provided in the activity_labels file
+
+5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+Created a single table containing the averages and means.
